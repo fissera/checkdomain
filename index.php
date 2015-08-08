@@ -7,8 +7,6 @@ $service = new AvailabilityService(true);
 
 $results = [];
 
-$abjad = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
-
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 	$domains = preg_replace('/\s+/', '', $_POST['domains']);
 	$domains_array = explode(',', $domains);
